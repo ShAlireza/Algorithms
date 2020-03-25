@@ -1,4 +1,13 @@
-class QuickFindUF:
+class QuickUnionUF:
+    """
+    Quick union approach
+        time complexities:
+            connected: O(n)
+            union: O(1)
+
+        worst-case time with M union-find operations on a set of N objects:
+            M N
+    """
 
     def __init__(self, size):
         self.ids = [_ for _ in range(size)]
