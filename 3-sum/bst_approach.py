@@ -1,7 +1,17 @@
 class Bst3Sum:
+    """
+    BST approach:
+            First sort numbers list in ascending order
+            a + b + c = 0
+            find third number -(a + b) with binary search
+            algorithm.
+
+            time complexity:
+                O(n^2 * log n)
+    """
 
     def __init__(self, numbers):
-        self.numbers = numbers
+        self.numbers = sorted(numbers)
         self._answer = self._3_sum_count()
 
     @property
